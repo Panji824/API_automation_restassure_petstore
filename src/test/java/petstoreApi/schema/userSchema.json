@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "username",
+    "firstName",
+    "lastName",
+    "email",
+    "password",
+    "phone",
+    "userStatus"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "username": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 20
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "password": {
+      "type": "string",
+      "minLength": 8
+    },
+    "phone": {
+      "type": "string"
+    },
+    "userStatus": {
+      "type": "integer"
+    }
+  }
+}
